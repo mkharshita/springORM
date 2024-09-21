@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e285bd9c-6555-40d6-b18e-06c79902b1c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/orm/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/orm/dao/StudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/orm/entities/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/spring/orm/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/orm/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/orm/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/orm/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/orm/dao/StudentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +41,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -81,5 +75,16 @@
       <updated>1726511922148</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/spring/orm/entities/Student.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

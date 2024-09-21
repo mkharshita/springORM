@@ -1,26 +1,42 @@
 package com.spring.orm.dao;
 
-import com.spring.orm.entities.Student;
 import jakarta.persistence.EntityManager;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.orm.hibernate5.HibernateTemplate;
+import jakarta.persistence.PersistenceContext;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import com.spring.orm.entities.Student;
 
+import java.util.List;
+
+@Repository
 public class StudentDao {
-    @Autowired
+    @PersistenceContext
     private EntityManager entityManager;
 
     @Transactional
-    public int insert(Student student){
-        this.entityManager.persist(student);
-        return 1;
+    public Student saveStudent(Student student) {
+        entityManager.persist(student);
+        return student;
     }
 
-    public EntityManager getEntityManager() {
-        return entityManager;
+    public List<Student> getAllStudents() {
+        return entityManager.createQuery("SELECT s FROM Student s", Student.class).getResultList();
     }
 
-    public void setEntityManager(EntityManager entityManager) {
-        this.entityManager = entityManager;
+    public Student getStudentById(int id) {
+        return entityManager.find(Student.class, id);
+    }
+
+    @Transactional
+    public void deleteStudent(int id) {
+        Student student = getStudentById(id);
+        if (student != null) {
+            entityManager.remove(student);
+        }
+    }
+
+    @Transactional
+    public void updateStudent(Student student) {
+        entityManager.merge(student);
     }
 }
